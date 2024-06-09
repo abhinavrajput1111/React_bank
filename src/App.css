@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+nav {
+  padding: 1rem 3rem;
+  background-color: beige;
+  background: linear-gradient(145deg, #662d8c, #ed1e79);
+  color: white;
+}
+h3 {
+  font-size: 26px;
+  font-family: Reddit Mono, sans-serif;
+}
+.heads {
+  text-align: center;
+  font-family: Reddit Mono, sans-serif;
+}
+
+.container {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+.left-container {
+  /* background-color: lightcyan; */
+  background-image: linear-gradient(-225deg, #c6ea8d, #fe90af);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 1rem;
+  width: 48%;
+  font-family: Reddit Mono, sans-serif;
+}
+.right-container {
+  width: 500px;
+  background-image: linear-gradient(-225deg, #c6ea8d, #fe90af);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 2rem;
+}
+.content {
+  padding: 1rem 2rem;
+}
+.content p:first-child {
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.content p:last-of-type {
+  font-family: Outfit, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.left-container input {
+  width: 100%;
+}
+.left-container p {
+  margin-bottom: 0.5rem;
+}
+.left-container select {
+  width: 100%;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  left: -10px;
+}
+.change {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.change p {
+  font-size: 13px !important;
+  font-family: Roboto, sans-serif !important;
+  font-weight: 400 !important;
+}
+@media screen and (max-width: 1200px) {
+  .right-container {
+    width: 40%;
+  }
+  .left-container {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .heads {
+    font-size: 18px;
+  }
+  .container {
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+  }
+  .heads {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 0.5rem 0rem;
+  }
+}
